@@ -1,0 +1,228 @@
+html {
+    font-size: 62.5%;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.robot__container {
+    width: 90%;
+    height: 90vh;
+    background-color: #ffffff;
+    position: relative;
+}
+
+
+.robot__head {
+    position: absolute;
+    top: 20px;
+    left: calc(50% - 11rem);
+    width: 22rem;
+    height: 14rem;
+    background-color: #9a9999;
+    border-top-left-radius: 700px;
+    border-top-right-radius: 700px;
+    overflow: hidden;
+    border: 1px solid #5b5b5b;
+    transition: 5s ease-in-out;
+}
+
+
+.head--animation:hover {
+    transform: rotatey(180deg);
+}
+
+.head--animation--js {
+    transform: rotatey(180deg);
+}
+
+.robot__head__details{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #103f96;
+
+}
+
+.robot__head__eye {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 4rem;
+    height: 4rem;
+    background-color: black;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.robot_head__lights__container {
+    position: absolute;
+    background-color: #103f96;
+    width: 100%;
+    height: 4rem;
+    bottom: 5%;
+    border-radius: 10px;
+}
+.robot__head__light {
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    width: 2rem;
+    height: 2rem;
+    background-color: #ff5959;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.robot__head__camera {
+    position: absolute;
+    top: 45%;
+    right: 10%;
+    width: 3rem;
+    height: 3rem;
+    background-color: #5b5b5b;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+}
+.robot__head__camera--focus {
+    background-color: black;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.robot__body {
+    position: absolute;
+    top: calc(20px + 14.1rem);
+    left: calc(50% - 11rem);
+    width: 22rem;
+    height: 22rem;
+    background-color: #b7b7b7;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.robot__body__chest {
+    width: 70%;
+    height: 2rem;
+    background-color: #103f96;
+    margin: 2rem auto;
+}
+
+.robot__body__details {
+    position: relative;
+    width: 20%;
+    height: 4rem;
+    background-color: #262626;
+    margin: 2rem auto;
+}
+
+.robot__body__details--line {
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 25%);
+    width: 50%;
+    height: .5rem;
+    background-color: #b7b7b7;
+
+}
+
+.robot__body--bottom{
+    position: absolute;
+    width: 15rem;
+    height: 4rem;
+    background-color: #5b5b5b;
+    top: calc(20px + 36rem);
+    left: calc(50% - 7.5rem);
+    border-bottom-left-radius:  200px;
+    border-bottom-right-radius: 200px;
+}
+
+.robot__arm {
+    position: absolute;
+    width: 5rem;
+    height: 24rem;
+    background-color: #9a9999;
+    border: 1px solid #5b5b5b;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+
+
+}
+
+.robot__arm--left {
+    border-top-left-radius:20px;
+    top: calc(20px + 15rem);
+    left: calc(50% - 16rem);
+}
+
+.robot__arm--right {
+    border-top-right-radius:20px;
+    top: calc(20px + 15rem);
+    left: calc(50% + 11rem);
+}
+
+.robot__foot {
+    position: absolute;
+    width: 8rem;
+    height: 6rem;
+    background-color: #b7b7b7;
+    border-top-left-radius: 60%;
+    border-top-right-radius: 60%;
+    top: calc(20px + 39rem);
+    border: 1px solid #5b5b5b;
+
+}
+
+.robot__foot--left{
+    left: calc(50% - 17.5rem);
+}
+.robot__foot--right {
+    left: calc(50% + 9.5rem);
+}
+.btn {
+    background-color: #103f96;
+    color: #ffffff;
+    padding: 1rem 2rem;
+}
+
+.btn:hover {
+    background-color: #5b5b5b;
+    color: #ffffff;
+    cursor: pointer;
+}
+#robot__btn__hablar {
+    position: absolute;
+    bottom: 3%;
+    left: 10%;
+}
+
+#robot__btn__secreto {
+    position: absolute;
+    bottom: 3%;
+    right: 10%;
+}
+
+.background1{
+    background-color: yellow;
+}
+.background2{
+    background-color: blue;
+}
+
+@keyframes move--head {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(180deg);}
+}
+
