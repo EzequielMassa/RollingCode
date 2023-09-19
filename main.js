@@ -1,7 +1,7 @@
 const botonHablar = document.getElementById('robot__btn__hablar');
-const audio = new Audio('../assets/media/audio/r2d2_short_sms.mp3');
+const audio = new Audio('./assets/media/audio/r2d2_short_sms.mp3');
 const botonSecreto = document.getElementById('robot__btn__secreto');
-const audioSecreto = new Audio('../assets/media/audio/secreto.mp3');
+const audioSecreto = new Audio('./assets/media/audio/secreto.mp3');
 const background = document.querySelector('.robot__container');
 const colores = ['#0000ff', '#ffff00'];
 let indiceColor = 0;
